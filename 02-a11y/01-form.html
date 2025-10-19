@@ -9,29 +9,29 @@
   <main>
     <h1>01 - Form</h1>
     <form action="/submit">
-      <label>
-        Name
-        <input type="text" />
-      </label>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" aria-required="true" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" aria-required="true" />
+      </div>
       <br /><br />
-      <label>
-        Email
-        <input type="email" />
-      </label>
-      <br /><br />
-      <fieldset>
+      <fieldset aria-required="true">
         <legend>Favorite Character</legend>
-        <input type="radio" name="character" id="spongebob" />
+        <input type="radio" name="character" id="spongebob" value="spongebob" />
         <label for="spongebob">Spongebob</label>
         <br />
-        <input type="radio" name="character" id="patrick" />
+        <input type="radio" name="character" id="patrick" value="patrick" />
         <label for="patrick">Patrick</label>
         <br />
-        <input type="radio" name="character" id="sandy" />
+        <input type="radio" name="character" id="sandy" value="sandy" />
         <label for="sandy">Sandy</label>
       </fieldset>
       <br />
-      <button>Submit</button>
+      <input type="submit" value="Submit" />
     </form>
   </main>
 </html>
