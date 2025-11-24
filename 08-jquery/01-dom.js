@@ -31,6 +31,12 @@ function handleClick(event) {
 //   ).value;
 // };
 
+$('document').ready(() => {
+  $('#copy').on('click', () => {
+    $('#output1').text($('#userInput1').val());
+  });
+});
+
 // Exercise #2:
 // When the user enters input text, copy the user input to the output area
 
@@ -46,3 +52,9 @@ function handleInput(event) {
   console.log('click event', event);
   output2.textContent = userInput2.value;
 }
+
+$('document').ready(() => {
+  $('#userInput2').on('input', () => {
+    $('#output2').text($('#userInput2').val());
+  });
+});
